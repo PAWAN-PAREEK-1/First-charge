@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
+import "../src/Style/Global.css";
 
 
 const Loading = lazy(() => import('./Components/Loading'));
