@@ -93,7 +93,7 @@ const Navbar = () => {
               <img src={search} alt="" />
             </a>
           </div>
-          <div className="quote-btn">
+          <div className="quote-btn cursor-pointer">
             <a href="">Get Quotes</a>
           </div>
         </div>

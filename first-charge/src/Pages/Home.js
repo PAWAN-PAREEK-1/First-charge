@@ -1,10 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { lazy, Suspense } from "react";
 import "../Style/Home.css";
 const Loading = lazy(() => import("../Components/Loading"));
 const Navbar = lazy(() => import("../Components/Navbar"));
 
 const Home = () => {
+  const initialText = "Ready For Tomorrow ";
+  const [scrollingText, setScrollingText] = useState(initialText);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setScrollingText(prevText => {
+        const newText = prevText.substring(1) + prevText[0];
+        return newText;
+      });
+    }, 500); // Adjust the interval time as needed
+
+    return () => clearInterval(interval);
+  }, []);
   return (
     <Suspense
       fallback={
@@ -16,20 +29,38 @@ const Home = () => {
       <div>
         <div className=" hero">
           <Navbar />
-          <div className="hero-main">
-            <div className="hero-deatil">
-              <div className="hero-left">
+          <div className="hero-main ">
+            <div className="hero-deatil ">
+              <div className="hero-left ">
                 <hr />
                 <h3>Your EV Charging Partner,</h3>
-                <h4>Everywhere You Imagine.</h4>
-              </div>
-              <div className="hero-right">
-                <h5>SCROLL TO EXPLORE <hr/></h5>
 
+                <h4 className="py-2">Everywhere You Imagine.</h4>
+
+                <a href="">Become a partner</a>
+              </div>
+              <div className="hero-right flex">
+                <h5>SCROLL TO EXPLORE </h5>
+                <hr />
               </div>
             </div>
           </div>
         </div>
+
+
+
+        <div className="randring py-8 sliding-container">
+      <div className="marquee">
+        <h1 id="sliding-text" className="font-poppins text-7xl font-black uppercase text-green1">
+          {scrollingText}
+        </h1>
+      </div>
+    </div>
+
+
+
+
+
       </div>
     </Suspense>
   );
