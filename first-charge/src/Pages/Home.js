@@ -3,6 +3,8 @@ import { lazy, Suspense } from "react";
 import "../Style/Home.css";
 const Loading = lazy(() => import("../Components/Loading"));
 const Navbar = lazy(() => import("../Components/Navbar"));
+const Mission = lazy(() => import("../Components/Mission"));
+const Services = lazy(() => import("../Components/Services"));
 
 const Home = () => {
   const initialText = "Ready For Tomorrow ";
@@ -10,11 +12,11 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setScrollingText(prevText => {
+      setScrollingText((prevText) => {
         const newText = prevText.substring(1) + prevText[0];
         return newText;
       });
-    }, 500); // Adjust the interval time as needed
+    }, 500);
 
     return () => clearInterval(interval);
   }, []);
@@ -47,17 +49,19 @@ const Home = () => {
           </div>
         </div>
 
+        <div className="randring  sliding-container">
+          <div className="marquee">
+            <h1
+              id="sliding-text"
+              className="font-poppins text-7xl font-black uppercase text-green1"
+            >
+              {scrollingText}
+            </h1>
+          </div>
+        </div>
 
-
-        <div className="randring py-8 sliding-container">
-      <div className="marquee">
-        <h1 id="sliding-text" className="font-poppins text-7xl font-black uppercase text-green1">
-          {scrollingText}
-        </h1>
-      </div>
-    </div>
-
-
+      <Mission/>
+      <Services/>
 
 
 

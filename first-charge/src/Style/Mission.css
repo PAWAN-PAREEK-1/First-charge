@@ -1,0 +1,52 @@
+
+
+
+.mission{
+    padding: 6.25rem 3.25rem ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: max-content !important;
+
+}
+.mission-left1 {
+    background: var(--black, #1A1A1A);
+    max-width: 50%;
+    padding: 6.55rem 0 11rem 3.25rem;
+}
+
+.mission-right{
+    max-width: 50%;
+}
+
+
+
+
+.mission-left H3{
+    color: var(--white, #FFF);
+font-family: Rajdhani;
+font-size: 2rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.mission-left h2{
+    color: #FFF;
+font-family: Bebas Neue;
+font-size: 3.75rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.mission-left p{
+    color: #FFF;
+font-family: Rajdhani;
+font-size: 1.25rem;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+padding-block: 0.94rem;
+padding-right: 17rem;
+}
+
+

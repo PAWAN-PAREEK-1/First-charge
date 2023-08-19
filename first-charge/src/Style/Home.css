@@ -1,13 +1,13 @@
 
 .hero{
-    height: 47rem;
+    height: 100vh;
     background-image:url(../Assets/img/hero.svg) ;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
 }
 .hero-main{
-    padding-inline: 3.25rem;
+    padding-inline: 15rem;
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -24,31 +24,31 @@ border: 1.5px solid black;
 
 }
 .hero-left h3{
-    color: #1F1F1F;
-font-family: Bebas Neue;
-font-size: 3.15rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #1F1F1F;
+  font-family: Bebas Neue;
+  font-size: 3.75rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .hero-left h4{
-    color: #1F1F1F;
-font-family: Bebas Neue;
-font-size: 1.875rem;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  color: #1F1F1F;
+  font-family: Bebas Neue;
+  font-size: 1.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 padding-bottom: 1.87rem;
 padding-top: 0;
 
 }
 .hero-right h5{
-    color: #FFF;
-font-family: Rajdhani;
-font-size: 1.125rem;
-font-style: normal;
-font-weight: 700;
-line-height: normal;
+  color: #FFF;
+  font-family: Rajdhani;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 .hero-right hr{
     stroke-width: 3px;
@@ -85,6 +85,7 @@ line-height: normal;
 .sliding-container {
     overflow: hidden;
     position: relative;
+    background: #F6F6F6;
   }
 
   .marquee {
@@ -120,12 +121,12 @@ line-height: normal;
     padding-right: 30px; /* Adjust spacing between repetitions */
     display: inline-block;
     color: var(--green, #58BB47);
-font-family: Poppins;
-font-size: 7.8125rem;
-font-style: normal;
-font-weight: 900;
-line-height: normal;
-letter-spacing: 0.9375rem;
-text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 7.8125rem;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.9375rem;
+    text-transform: uppercase;
   }
 
