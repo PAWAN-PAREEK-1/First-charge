@@ -5,6 +5,7 @@ const Loading = lazy(() => import("../Components/Loading"));
 const Navbar = lazy(() => import("../Components/Navbar"));
 const Mission = lazy(() => import("../Components/Mission"));
 const Services = lazy(() => import("../Components/Services"));
+const Charge = lazy(() => import("../Components/Charge"));
 
 const Home = () => {
   const initialText = "Ready For Tomorrow ";
@@ -62,6 +63,7 @@ const Home = () => {
 
       <Mission/>
       <Services/>
+      <Charge/>
 
 
 
